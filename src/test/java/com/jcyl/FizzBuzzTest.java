@@ -48,10 +48,26 @@ public class FizzBuzzTest
     @Test
     public void shouldconvertFiveTobuzz()
     {
-        FizzBuzzMachine machine = new FizzBuzzMachine();
         
         String result = machine.translate(5);
         
         assertEquals("Buzz", result);
+    }
+    @Test
+    public void shouldconvert15ToFizzBuzz()
+    {
+        
+        String result = machine.translate(15);
+        
+        assertEquals("FizzBuzz", result);
+    }
+    
+    @Test
+    public void shouldconvert7ToWHIZZ()
+    {
+        
+        String result = machine.translate(7);
+        
+        assertEquals("Whizz", result);
     }
 }

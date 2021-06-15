@@ -4,13 +4,10 @@ import java.util.*;
 
 public class FizzBuzzMachine {
   
-  List <Converter> converters = new ArrayList <>();
+  List <Converter> converters;
   
   public FizzBuzzMachine(){
-    Converter fizzconverter = new FizzConverter();
-    Converter buzzconverter = new BuzzConverter();
-    converters.add(fizzconverter);
-    converters.add(buzzconverter);
+    converters = Arrays.asList(new FizzConverter(), new BuzzConverter(), new FizzBuzzConverter());
     
   }
   public String translate(int value) {

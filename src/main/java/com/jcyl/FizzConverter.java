@@ -1,8 +1,9 @@
 package com.jcyl;
 
 public class FizzConverter implements Converter{
+  public final int VALUE_MATCH= 3;
   public boolean meetRule(int value) {
-    return value % 3 == 0;
+    return value % VALUE_MATCH == 0;
   }
   
   @Override
