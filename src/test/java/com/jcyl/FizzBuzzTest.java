@@ -70,4 +70,9 @@ public class FizzBuzzTest
         
         assertEquals("Whizz", result);
     }
+    
+    @Test(expected= IllegalArgumentException.class)
+    public void throwsExceptionWithZeroValue(){
+        String result = machine.translate(0);
+    }
 }

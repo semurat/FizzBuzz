@@ -12,6 +12,10 @@ public class FizzBuzzMachine {
   }
   public String translate(int value) {
     
+    if(value==0){
+      throw new IllegalArgumentException("Zero values not allowed");
+    }
+    
     String result= String.valueOf(value);
     for(Converter converter :converters){
       if(converter.meetRule(value)){
